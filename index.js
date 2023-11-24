@@ -6,7 +6,7 @@ import db from "./_db.js";
 import mongoose from 'mongoose'
 
 // Connect to mongoDb database
-mongoose.connect('mongodb://127.0.0.1:27017/gamesCon');
+mongoose.connect('mongodb://localhost:27017/gamesCon');
 const Games = mongoose.model('Games', new mongoose.Schema({ 
   id: String,
   title: String,
